@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  kotlin-app:
+    build:
+      context: .
+    image: kotlin-hello-world
+    container_name: kotlin_hello_world_app
+    volumes:
+      - .:/app
+    ports:
+      - "8080:8080"
